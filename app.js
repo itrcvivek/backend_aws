@@ -21,7 +21,7 @@ const FrequentlyQuestion = require("./routes/FrequentlyQuestionRoutes")
 const Booking = require("./routes/BookingRoutes")
 
 app.use("/", (req, res) => {
-    res.json("Hello, World! I am from backend_aws");
+    res.json({message:"hello from express app"});
 });
 app.use("/api/v1/", user);
 app.use("/api/v1/", category);
