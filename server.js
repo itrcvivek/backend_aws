@@ -23,10 +23,14 @@ cloudinary.v2.config({
 // Connect to the database
 connectDatabase();
 
+// Log message before starting the server
+console.log("i m from backend");
+
 // Start the server
-const server = app.listen(process.env.PORT || 6000, () => {
-    console.log(`Server is running on http://localhost:${process.env.PORT || 6000}`);
+const server = app.listen(process.env.PORT || 6001, () => {
+    console.log(`Server is running on http://localhost:${process.env.PORT || 6001}`);
 });
+
 
 // Handle unhandled promise rejections
 process.on("unhandledRejection", (err) => {
